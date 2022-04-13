@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Banner from '../components/Banner'
 import Header from '../components/Header'
+import Banner from '../components/Banner'
+import GetAllPosts from '../components/api_calls/GetAllPosts'
 import { Props } from '../components/Types'
 
 
@@ -19,13 +20,6 @@ const Home = (props: Props) => {
   )
 }
 export default Home
-export const getServerSideProps = async () => {
-  const result = await fetch(
-    `http://localhost:3000/api`
-  ).then((res) => res.json())
-  return {
-    props: {
-      posts: result
-    }
-  }
+export const getServerSideProps = () => {
+  return GetAllPosts()
 }
