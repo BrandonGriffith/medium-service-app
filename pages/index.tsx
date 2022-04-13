@@ -19,8 +19,8 @@ const Home = (props: Props) => {
   )
 }
 export default Home
-export async function getServerSideProps() {
-  let result = await fetch(
+export const getServerSideProps = async () => {
+  const result = await fetch(
     `http://localhost:3000/api`
   ).then((res) => res.json())
   return {
