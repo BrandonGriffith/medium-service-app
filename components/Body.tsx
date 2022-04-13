@@ -1,9 +1,22 @@
+import Link from "next/link"
 import { Props } from "./Types"
 
 const Body = (props: Props) => {
     return (
     <div>
-        <h1 className='text-red-500'>{props.posts[0].content}</h1>
+        {props.posts.map(post => (
+            <Link key={post.id} 
+            href={`/post/${post.id}`}>
+                <div>
+                    <img src={post.img}/>
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </Link>
+        ))}
     </div>
     )
 }

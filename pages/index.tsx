@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
+import Body from '../components/Body'
 import GetAllPosts from '../components/api_calls/GetAllPosts'
 import { Props } from '../components/Types'
-import Body from '../components/Body'
 
 
 const Home = (props: Props) => {
