@@ -15,7 +15,7 @@ const Banner = () => {
         </div>
         <img 
             src="vercel.svg" 
-            alt="" 
+            alt="vercel" 
             className="hidden md:inline-flex w-[40%] lg:w-[30%] pr-5" 
         />
     </div>

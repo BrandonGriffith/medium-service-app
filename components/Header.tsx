@@ -5,7 +5,7 @@ const Header = () => {
     <header className="flex justify-between p-5 max-w-7xl mx-auto">
         <div className="flex items-center space-x-5">
             <Link href="/">
-                <img src="/logo512.png" alt="" className="w-[10%] object-contain cursor-pointer" />
+                <img src="/logo512.png" alt="react" className="w-[10%] object-contain cursor-pointer" />
             </Link>
             <div className="hidden md:inline-flex items-center space-x-5">
                 <h3 className="bg-orange-700 px-4 py-1 rounded-full font-bold cursor-pointer">About</h3>

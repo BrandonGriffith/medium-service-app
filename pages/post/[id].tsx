@@ -13,12 +13,12 @@ const ShowPost = (props:Props) => {
         <Header/>
         <div className="max-w-7xl mx-auto text-center">
             <div className="flex justify-center">
-                <img src={post.img} alt=""
+                <img src={post.img} alt={post.title}
                 className="border-4 border-black 
                 rounded-xl w-[40%]"/>
             </div>
-            <h1>{post.title}</h1>
-            <p>{post.content}</p>
+            <h1 className="text-3xl">{post.title}</h1>
+            <p className="text-xl">{post.content}</p>
         </div>
     </>
     )
