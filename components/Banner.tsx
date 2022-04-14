@@ -1,9 +1,11 @@
 const Banner = () => {
     return (
-    <div className="flex justify-between items-center bg-pink-800 border-y-4 border-black py-5">
+    <div className="flex justify-between items-center 
+    bg-pink-800 border-y-4 border-black py-5 rounded-lg">
         <div className="px-10 space-y-5">
             <h1 className="text-6xl max-w-lg font-serif">
-                <span className="underline decoration-slate-400 decoration-4 decoration-wavy">
+                <span className="underline decoration-slate-400 
+                decoration-4 decoration-wavy">
                     Medium
                 </span> {" "}
                 Clone Service

@@ -3,16 +3,20 @@ import { Props } from "./Types"
 
 const Body = (props: Props) => {
     return (
-    <div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">
         {props.posts.map(post => (
             <Link key={post.id} 
             href={`/post/${post.id}`}>
-                <div>
-                    <img src={post.img}/>
-                    <div>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                <div className="border-4 rounded-lg border-black hover:scale-105 cursor-pointer 
+                transition-transform duration-200 ease-in-out">
+                    <img className="h-60 w-full object-cover" 
+                    src={post.img}/>
+                    <div className="rounded-lg flex justify-between p-5 bg-white text-black">
+                        <div>
+                            <p>{post.title}</p>
+                            <p>{post.content}</p>
+                        </div>
+                        <img src="/vercel.svg" alt="" className="w-[30%]"/>
                     </div>
                 </div>
             </Link>
