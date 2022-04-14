@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 const Header = () => {
@@ -5,7 +6,12 @@ const Header = () => {
     <header className="flex justify-between p-5 max-w-7xl mx-auto">
         <div className="flex items-center space-x-5">
             <Link href="/" passHref={true}>
-                <img src="/logo512.png" alt="react" className="w-[10%] object-contain cursor-pointer" />
+                <div>
+                    <Image src="/logo512.png" alt="react" 
+                    width={100}
+                    height={100}
+                    className="w-[10%] object-contain cursor-pointer" />
+                </div>
             </Link>
             <div className="hidden md:inline-flex items-center space-x-5">
                 <h3 className="bg-orange-700 px-4 py-1 rounded-full font-bold cursor-pointer">About</h3>
