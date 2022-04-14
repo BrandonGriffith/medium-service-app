@@ -21,6 +21,10 @@ const Home = (props: Props) => {
   )
 }
 export default Home
-export const getServerSideProps = () => {
-  return GetAllPosts()
+export const getServerSideProps = async () => {
+  return {
+    props: {
+        posts: await GetAllPosts()
+    }
+}
 }

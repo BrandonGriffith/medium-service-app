@@ -3,10 +3,6 @@ const GetAllPosts = async () => {
     const result = await fetch(
         `http://localhost:3000/api`
         ).then( res => res.json() )
-    return {
-        props: {
-            posts: result
-        }
-    }
+    return result
 }
 export default GetAllPosts
